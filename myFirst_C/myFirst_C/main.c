@@ -33,10 +33,26 @@ Ici, ma fonction se contente d'afficher la question de Larmina .
 */
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    printf("\t Comment est votre\n blanquette?\n"); // Elle est bonne
+    int nombreDeVies, niveau, ageDeJoueur;
+    char SEC_PERSONNAGE[] = "Larmina";
+    char FIR_PERSONNAGE[] = "Huber";
+    const int N_IMMATRICULE = 117;
+    nombreDeVies = 5;
+    int age = 0;
+    char prenom[250];
+    
+    printf("Entrez votre âge : ");
+    scanf("%d", &age);
+    
+    printf("Entrez votre prénom : ");
+    scanf("%s", prenom);
+    printf("%s: Comment est votre blanquette? \n", SEC_PERSONNAGE);
+    printf("%d : Elle est bonne \n", N_IMMATRICULE);
+    nombreDeVies = 4;
+    printf("%s a perdu 1 point de vie, il lui reste %d point de vie \n", FIR_PERSONNAGE, nombreDeVies);
+    printf("%s: On me dit le plus grand bien des harengs pomme-à-l’huile \n", SEC_PERSONNAGE);
+    
     /*
-     Larmina : On me dit le plus grand bien des harengs pomme-à-l’huile.
      OSS 117 : Le patron vous en apportera un ramequin, vous vous ferez une idée.
      */
     return 0;
